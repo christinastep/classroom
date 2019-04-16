@@ -1,0 +1,223 @@
+.intro{
+  margin:0;
+  width:100vw;
+  height:100vh;
+  overflow:hidden;
+  position: relative;
+  background-color: #AFACC8;
+  position: fixed;
+}
+
+.intro__rang{
+  position: absolute;
+  bottom: -40px;
+  width:43vw;
+  left:0;
+  &--left{
+    transition: all 0.7s;
+    transform: scaleX(-1);
+    right:0;
+    left:auto;
+    &.fadeOut{
+      right:-20vw;
+    }
+  }
+  &--right{
+    left:0;
+    transition: all 0.7s;
+    &.fadeOut{
+      left:-20vw;
+    }
+  }
+}
+
+.intro__clock{
+  position: absolute;
+  top:5vw;
+  right:4vw;
+  width:9vw;
+}
+
+.intro__teacher{
+  position: absolute;
+  bottom: -4vw;
+  left:10vw;
+  width:12.5vw;
+  transition: all 0.7s;
+  &.fadeOut{
+    left:-43vw;
+  }
+}
+
+.intro__tablau{
+  box-sizing: border-box;
+  position: fixed;
+  top:10vw;
+  width: 50vw;
+  height:28vw;
+  border-radius:1vw;
+  border:1vw solid grey;
+  left:25vw;
+  background-color: #fff;
+  transition: all 0.7s;
+  display: flex;
+  align-items: center;
+  &.commande{
+    left:15vw;
+    width: 70vw;
+    height:80vh;
+    top:15vh;
+  }
+}
+
+.hp{
+  .intro__tablau{
+    &.toWhite{
+      left:-5vw;
+      width: 110vw;
+      height:75vh;
+      top:-5vh;
+    }
+  }
+}
+
+.tableau__text{
+  position: absolute;
+  width:90%;
+  left:5%;
+  //top:2vw;
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 1.4em;
+  opacity: 0;
+  .tableau__text__titre{
+    margin-top: 30px;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+  }
+  &.tableau__text--1{
+    opacity: 1;
+    transition: all 0.1s;
+    height:auto;
+    &.fadeOut{
+      opacity:0;
+    }
+  }
+}
+
+button{
+  margin:0 auto;
+  display: block;
+  width:40%;
+  padding:10px;
+  border-radius: 10vw;
+  margin-top: 30px;
+  background-color: #48437D;
+  color: #fff;
+  font-size: 0.7em;
+  &.button--alert{
+    background-color:#1A192B;
+  }
+  &:hover{
+    background-color: #2C2764;
+  }
+}
+
+.down {
+  border: solid black;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 3px;
+  position: absolute;
+  z-index: 3;
+  bottom:2vw;
+  left:49vw;
+  transition: all 0.3s;
+  opacity: 1;
+  &.fadeOut{
+    opacity: 0;
+  }
+
+  animation: arrow .5s ease-in-out infinite alternate;
+  @keyframes arrow{
+    from{transform: translateY(-5px) rotate(45deg)}
+    to{transform: translateY(5px) rotate(45deg)}
+  }
+}
+
+.hp{
+  .tableau__text{
+    opacity: 0;
+  }
+  .tableau__text--1{
+    opacity: 1;
+    height:auto;
+    z-index: 3;
+  }
+}
+
+.step1{
+  .tableau__commande--1{
+    opacity: 1;
+    z-index: 4;
+  }
+}
+
+.checkview{
+  background-color: grey;
+  width: 36vw;
+  margin: 2vw;
+  height: 18vw;
+  &.checkview--resultat{
+    background-color: #fff;
+  }
+  
+}
+
+//enfant
+.buttonBox{
+  display: flex;
+  justify-content: center;
+  button{
+    margin:0 10px;
+    width: 30%;
+  }
+}
+
+
+
+// 3D
+.button__commande--4{
+  width:100px;
+  float:right;
+  margin:10px;
+}
+
+.text--small{
+  font-size: 0.6em;
+}
+
+
+input{
+  display: block;
+  width:20vw;
+  margin:0 auto;
+  border: none;
+  border-bottom: 3px solid black;
+  background-color: #efefef;
+  padding:5px;
+  height:40px;
+  &.input--1{
+    margin-bottom: 20px;
+  }
+}
+
+.imput__description{
+  font-size: 0.7em;
+  text-align: left;
+}
+
+
+

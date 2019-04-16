@@ -1,0 +1,19 @@
+header{
+  width:100vw;
+  padding:15px;
+  background-color: #fff;
+  position: fixed;
+  z-index: 3;
+  padding-left:40px;
+  top:0;
+  transition: all .3s ease-in;
+}
+
+h1{
+  font-weight: bold;
+  font-size: 1.5em;
+  a{
+    text-decoration: none;
+    color: black;
+  }
+}

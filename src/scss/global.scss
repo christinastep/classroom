@@ -1,0 +1,21 @@
+html,
+body {
+  margin: 0;
+  padding: 0;;
+  font-family: sans-serif;
+  overflow-x: hidden;
+  font-family: 'Quicksand', sans-serif;
+}
+
+body{
+  &.statusCommande{
+    position: fixed;
+    height:100vh;
+    overflow: hidden;
+
+  }
+}
+
+*{
+  box-sizing: border-box;
+}

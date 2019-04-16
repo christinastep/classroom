@@ -1,0 +1,301 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button:focus {
+  outline: none;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  overflow-x: hidden;
+  font-family: "Quicksand", sans-serif;
+}
+
+body.statusCommande {
+  position: fixed;
+  height: 100vh;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.intro {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background-color: #AFACC8;
+  position: fixed;
+}
+
+.intro__rang {
+  position: absolute;
+  bottom: -40px;
+  width: 43vw;
+  left: 0;
+}
+.intro__rang--left {
+  transition: all 0.7s;
+  transform: scaleX(-1);
+  right: 0;
+  left: auto;
+}
+.intro__rang--left.fadeOut {
+  right: -20vw;
+}
+.intro__rang--right {
+  left: 0;
+  transition: all 0.7s;
+}
+.intro__rang--right.fadeOut {
+  left: -20vw;
+}
+
+.intro__clock {
+  position: absolute;
+  top: 5vw;
+  right: 4vw;
+  width: 9vw;
+}
+
+.intro__teacher {
+  position: absolute;
+  bottom: -4vw;
+  left: 10vw;
+  width: 12.5vw;
+  transition: all 0.7s;
+}
+.intro__teacher.fadeOut {
+  left: -43vw;
+}
+
+.intro__tablau {
+  box-sizing: border-box;
+  position: fixed;
+  top: 10vw;
+  width: 50vw;
+  height: 28vw;
+  border-radius: 1vw;
+  border: 1vw solid grey;
+  left: 25vw;
+  background-color: #fff;
+  transition: all 0.7s;
+  display: flex;
+  align-items: center;
+}
+.intro__tablau.commande {
+  left: 15vw;
+  width: 70vw;
+  height: 80vh;
+  top: 15vh;
+}
+
+.hp .intro__tablau.toWhite {
+  left: -5vw;
+  width: 110vw;
+  height: 75vh;
+  top: -5vh;
+}
+
+.tableau__text {
+  position: absolute;
+  width: 90%;
+  left: 5%;
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 1.4em;
+  opacity: 0;
+}
+.tableau__text .tableau__text__titre {
+  margin-top: 30px;
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+.tableau__text.tableau__text--1 {
+  opacity: 1;
+  transition: all 0.1s;
+  height: auto;
+}
+.tableau__text.tableau__text--1.fadeOut {
+  opacity: 0;
+}
+
+button {
+  margin: 0 auto;
+  display: block;
+  width: 40%;
+  padding: 10px;
+  border-radius: 10vw;
+  margin-top: 30px;
+  background-color: #48437D;
+  color: #fff;
+  font-size: 0.7em;
+}
+button.button--alert {
+  background-color: #1A192B;
+}
+button:hover {
+  background-color: #2C2764;
+}
+
+.down {
+  border: solid black;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 3px;
+  position: absolute;
+  z-index: 3;
+  bottom: 2vw;
+  left: 49vw;
+  transition: all 0.3s;
+  opacity: 1;
+  animation: arrow 0.5s ease-in-out infinite alternate;
+}
+.down.fadeOut {
+  opacity: 0;
+}
+@keyframes arrow {
+  from {
+    transform: translateY(-5px) rotate(45deg);
+  }
+  to {
+    transform: translateY(5px) rotate(45deg);
+  }
+}
+
+.hp .tableau__text {
+  opacity: 0;
+}
+.hp .tableau__text--1 {
+  opacity: 1;
+  height: auto;
+  z-index: 3;
+}
+
+.step1 .tableau__commande--1 {
+  opacity: 1;
+  z-index: 4;
+}
+
+.checkview {
+  background-color: grey;
+  width: 36vw;
+  margin: 2vw;
+  height: 18vw;
+}
+.checkview.checkview--resultat {
+  background-color: #fff;
+}
+
+.buttonBox {
+  display: flex;
+  justify-content: center;
+}
+.buttonBox button {
+  margin: 0 10px;
+  width: 30%;
+}
+
+.button__commande--4 {
+  width: 100px;
+  float: right;
+  margin: 10px;
+}
+
+.text--small {
+  font-size: 0.6em;
+}
+
+input {
+  display: block;
+  width: 20vw;
+  margin: 0 auto;
+  border: none;
+  border-bottom: 3px solid black;
+  background-color: #efefef;
+  padding: 5px;
+  height: 40px;
+}
+input.input--1 {
+  margin-bottom: 20px;
+}
+
+.imput__description {
+  font-size: 0.7em;
+  text-align: left;
+}
+
+header {
+  width: 100vw;
+  padding: 15px;
+  background-color: #fff;
+  position: fixed;
+  z-index: 3;
+  padding-left: 40px;
+  top: 0;
+  transition: all 0.3s ease-in;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+h1 a {
+  text-decoration: none;
+  color: black;
+}
