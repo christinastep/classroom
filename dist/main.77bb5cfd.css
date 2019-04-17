@@ -61,6 +61,11 @@ body {
   font-family: "Quicksand", sans-serif;
 }
 
+body {
+  max-height: 470vh;
+  overflow: hidden;
+  position: relative;
+}
 body.statusCommande {
   position: fixed;
   height: 100vh;
@@ -407,7 +412,7 @@ table th {
   font-weight: bold;
   font-size: 2.8em;
   line-height: 1.35em;
-  transform: rotate(-10deg);
+  transform: rotate(-8deg);
   font-family: "Schoolbell", cursive;
 }
 
@@ -442,6 +447,7 @@ h2:after {
   background-color: black;
   left: 35%;
   bottom: -20px;
+  border-radius: 2vw;
 }
 
 .boxs--avantages {
@@ -469,7 +475,7 @@ h2:after {
   transition: all 1s ease-in-out;
   top: 0vw;
   left: 15vw;
-  height: 100vw;
+  height: 125vw;
   border-radius: 40px;
   background: #efefef;
   background-image: linear-gradient(90deg, grey 1px, transparent 0), linear-gradient(grey 1px, transparent 0);
@@ -537,16 +543,16 @@ h2:after {
 }
 
 .fade--1 .icon--directrice {
-  background-image: url("http://www.taz.de/picture/176804/948/arne_ulbricht.jpg");
+  background-image: url("mec--1.093ee3ac.jpg");
 }
 
 .fade--2 .icon--directrice {
   background-position: 10% 10%;
-  background-image: url("https://www.bern.ch/politik-und-verwaltung/gemeinderat/mitglieder-des-gemeinderats-der-stadt-bern/ursula-wyss-direktorin-fur-tiefbau-verkehr-und/bernartikelblock.2004-12-30.6429976460-image1/@@images/ce815666-f33b-406b-8fe5-5580b5b0cad9.jpeg");
+  background-image: url("mec--2.a688444d.jpeg");
 }
 
 .fade--3 .icon--directrice {
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3ATdTLAjky_IM-UDHXzeWf2EZnqrLwNN2quHal3eUFvyBLezY");
+  background-image: url("mec--3.a722efb3.jpeg");
 }
 
 .mySlides {
@@ -616,6 +622,71 @@ h2:after {
     font-size: 11px;
   }
 }
+.moeble {
+  background-color: #48437D;
+  color: #fff;
+  position: relative;
+  top: -80vw;
+  z-index: 27;
+  padding-top: 5vw;
+  padding-bottom: 3vw;
+}
+.moeble h2:after {
+  background-color: #fff;
+}
+
+.box--moeble {
+  width: 90vw;
+  flex-wrap: wrap;
+  margin-left: 5vw;
+  display: flex;
+  justify-content: space-between;
+}
+.box--moeble .box {
+  width: 20vw;
+  margin-bottom: 50px;
+  background-color: #ffff;
+  border-radius: 20px;
+  padding: 20px;
+  position: relative;
+}
+.box--moeble .box img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.box--moeble .box button {
+  position: absolute;
+  width: 70%;
+  left: 15%;
+  bottom: -15px;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.end {
+  position: absolute;
+  bottom: 5vw;
+  z-index: 50;
+  width: 100%;
+}
+.end .teaser--3 {
+  position: relative;
+  top: 0;
+  opacity: 1;
+}
+.end .end__button {
+  width: 30%;
+  left: 35%;
+  font-size: 1.4em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+body.statusCommande .end {
+  display: none;
+}
+
 header {
   width: 100vw;
   padding: 15px;
