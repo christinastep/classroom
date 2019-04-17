@@ -80,6 +80,11 @@ body.statusCommande {
   background-color: #AFACC8;
   position: fixed;
 }
+.intro.bgPaper {
+  background: #efefef;
+  background-image: linear-gradient(90deg, grey 1px, transparent 0), linear-gradient(grey 1px, transparent 0);
+  background-size: 20px 20px;
+}
 
 .intro__rang {
   position: absolute;
@@ -206,6 +211,9 @@ button.button--alert {
 button:hover {
   background-color: #2C2764;
 }
+button.button__commande--2-upload {
+  background-color: #c4c4c4;
+}
 
 .down {
   border: solid black;
@@ -294,6 +302,12 @@ input {
   background-color: #efefef;
   padding: 5px;
   height: 40px;
+  font-size: 1em;
+  text-align: center;
+}
+
+.input--age {
+  width: 50px;
 }
 
 .imput__description {
@@ -384,6 +398,19 @@ table th {
   opacity: 1;
 }
 
+.teaser--2 {
+  position: relative;
+  z-index: 25;
+  opacity: 1;
+  top: 20vw;
+  left: 20%;
+  font-weight: bold;
+  font-size: 2.8em;
+  line-height: 1.35em;
+  transform: rotate(-10deg);
+  font-family: "Schoolbell", cursive;
+}
+
 .test {
   height: 170vh;
   background-color: red;
@@ -391,6 +418,7 @@ table th {
 }
 
 .avantages {
+  z-index: 20;
   position: relative;
   width: 80vw;
   left: 10vw;
@@ -418,10 +446,11 @@ h2:after {
 
 .boxs--avantages {
   display: flex;
-  z-index: 20;
   justify-content: space-between;
 }
 .boxs--avantages .box--avantage {
+  border-radius: 1vw;
+  border: 1vw solid grey;
   padding: 30px 50px;
   width: 25%;
   background-color: #fff;
@@ -435,21 +464,46 @@ h2:after {
   line-height: 1.2em;
 }
 
-.new {
+.bg {
   position: relative;
-  top: -5vw;
+  transition: all 1s ease-in-out;
+  top: 0vw;
+  left: 15vw;
+  height: 100vw;
+  border-radius: 40px;
+  background: #efefef;
+  background-image: linear-gradient(90deg, grey 1px, transparent 0), linear-gradient(grey 1px, transparent 0);
+  background-size: 20px 20px;
+  z-index: 19;
+}
+.bg.moveUp {
+  top: -30vw;
+}
+
+.new {
+  width: 85vw;
+  left: -8vw;
+  position: relative;
+  top: 25vw;
   overflow: hidden;
 }
-.new img {
+.new figure {
+  position: absolute;
   width: 50%;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+}
+.new figure img {
+  height: 100%;
   display: block;
 }
 .new .new__textbox {
+  margin-left: 50%;
   width: 50%;
   padding: 5vw;
   font-size: 1.3em;
   line-height: 1.2em;
-  padding-right: 10vw;
 }
 .new .new__textbox button {
   margin-left: 0;
@@ -476,15 +530,23 @@ h2:after {
   background-color: #fff;
   margin-right: 15px;
   background-size: cover;
-  background-position: 10% 10%;
-  background-image: url("https://www.bern.ch/politik-und-verwaltung/gemeinderat/mitglieder-des-gemeinderats-der-stadt-bern/ursula-wyss-direktorin-fur-tiefbau-verkehr-und/bernartikelblock.2004-12-30.6429976460-image1/@@images/ce815666-f33b-406b-8fe5-5580b5b0cad9.jpeg");
+  background-position: center;
 }
 .box--name p {
   margin-top: 15px;
 }
 
 .fade--1 .icon--directrice {
+  background-image: url("http://www.taz.de/picture/176804/948/arne_ulbricht.jpg");
+}
+
+.fade--2 .icon--directrice {
+  background-position: 10% 10%;
   background-image: url("https://www.bern.ch/politik-und-verwaltung/gemeinderat/mitglieder-des-gemeinderats-der-stadt-bern/ursula-wyss-direktorin-fur-tiefbau-verkehr-und/bernartikelblock.2004-12-30.6429976460-image1/@@images/ce815666-f33b-406b-8fe5-5580b5b0cad9.jpeg");
+}
+
+.fade--3 .icon--directrice {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3ATdTLAjky_IM-UDHXzeWf2EZnqrLwNN2quHal3eUFvyBLezY");
 }
 
 .mySlides {
@@ -496,6 +558,8 @@ h2:after {
   position: relative;
   margin: auto;
   background-color: #fff;
+  border-radius: 1vw;
+  border: 1vw solid grey;
 }
 
 .wrap--slider {
@@ -506,8 +570,8 @@ h2:after {
 /* The dots/bullets/indicators */
 .box--dot {
   position: absolute;
-  bottom: 3vw;
-  left: 55vw;
+  bottom: 4vw;
+  left: 47vw;
 }
 .box--dot .dot {
   height: 15px;
@@ -557,7 +621,7 @@ header {
   padding: 15px;
   background-color: #fff;
   position: fixed;
-  z-index: 3;
+  z-index: 30;
   padding-left: 40px;
   top: 0;
   transition: all 0.3s ease-in;

@@ -14,6 +14,12 @@ window.addEventListener('load', function() {
             document.querySelector('.intro__tablau').classList.add("toTop");
             document.querySelector('.teaser').style.opacity = "0";
             document.querySelector('.avantages').style.top = "-20vw";
+            if (document.documentElement.scrollTop > window.innerHeight*0.9 ) {
+              document.querySelector('.bg').classList.add('moveUp');
+            }
+            else{
+              document.querySelector('.bg').classList.remove('moveUp');
+            }
           }
           else{
             document.querySelector('.intro__rang--left').style.right = "-20vw";

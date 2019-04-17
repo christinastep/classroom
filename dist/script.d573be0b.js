@@ -121,6 +121,12 @@ window.addEventListener('load', function () {
             document.querySelector('.intro__tablau').classList.add("toTop");
             document.querySelector('.teaser').style.opacity = "0";
             document.querySelector('.avantages').style.top = "-20vw";
+
+            if (document.documentElement.scrollTop > window.innerHeight * 0.9) {
+              document.querySelector('.bg').classList.add('moveUp');
+            } else {
+              document.querySelector('.bg').classList.remove('moveUp');
+            }
           } else {
             document.querySelector('.intro__rang--left').style.right = "-20vw";
             document.querySelector('.intro__rang--right').style.left = "0.vw";
@@ -313,7 +319,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56750" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61242" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

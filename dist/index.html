@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Classroom3D</title>
     <meta name="description" content="Classroom3D">
+    <link href="https://fonts.googleapis.com/css?family=Schoolbell" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
     <link href="/main.77bb5cfd.css" rel="stylesheet">
   <script src="/main.77bb5cfd.js"></script></head>
@@ -52,8 +53,9 @@
 
         <div class="tableau__text tableau__commande--2">
           <span class="tableau__text__titre">Update le plan du class</span><br>
-          <span class="link--text">ou cree ton map</span>
-          <button class="button--valide button__commande--2">Select fichier</button>
+          <span class="">Si tu as pas un plan tu peux cree apres</span>
+          <button class="button--valide button__commande--2-upload">Select fichier</button>
+          <button class="button--valide button__commande--2">Valide</button>
         </div>
 
         <div class="tableau__text tableau__commande--3">
@@ -72,7 +74,7 @@
           <span class="">Selecte le demi age du enfant pour le test de vue</span>
           <form action="">
             <div class="box box--mt">
-              <input type="text">
+              <input type="text" class="input--age">
               <lable class="imput__description">Age moyenne du class:</lable>
             </div>
           </form>
@@ -172,6 +174,10 @@
     <section class="avantages">
       <h2>Super Headline pour ici</h2>
       <div class="boxs--avantages">
+        <!-- <div class="box--avantage">
+          <img src="img/cube.svg" alt="">
+          <p>selecter des mueble super qualitatif</p>
+        </div> -->
         <div class="box--avantage">
           <img src="/cube.4abea024.svg" alt="">
           <p>aménager votre salles de classe en 3D</p>
@@ -187,63 +193,74 @@
       </div>
     </section>
 
-    <section class="new">
-      <div class="slideshow-container">
-        <div class="mySlides fade fade--1">
-          <div class="wrap--slider">
-            <img src="https://previews.123rf.com/images/ismagilov/ismagilov1608/ismagilov160800094/60811708-entre-la-salle-de-classe-du-coll%C3%A8ge-avec-des-meubles-en-bois-big-fen%C3%AAtre-retour-%C3%A0-l-%C3%A9cole-rendu-3d-maquet.jpg">
-            <div class="text new__textbox">
-                <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, mollitia facere neque quae saepe accusantium! Molestiae nihil, rerum beatae obcaecati magnam nulla cumque dolorum ut accusamus facere consequatur. Magni, corporis!"</p><br>
-                <div class="box--name">
-                  <div class="icon--directrice"></div>
-                  <p><span class="bold">Directrise Claire Mont,</span><br> Paris 12eme Lycee Louis</p>
+    <div class="bg">
+      <p class="teaser teaser--2">Nos clients sont super conetnts blabla bla.... 20/20</p>
+      <section class="new">
+          <div class="slideshow-container">
+            <div class="mySlides fade fade--1">
+              <div class="wrap--slider">
+                <figure>
+                  <img src="https://previews.123rf.com/images/ismagilov/ismagilov1608/ismagilov160800094/60811708-entre-la-salle-de-classe-du-coll%C3%A8ge-avec-des-meubles-en-bois-big-fen%C3%AAtre-retour-%C3%A0-l-%C3%A9cole-rendu-3d-maquet.jpg">
+                </figure>
+                <div class="text new__textbox">
+                    <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, mollitia facere neque quae saepe accusantium! Molestiae nihil, rerum beatae obcaecati magnam nulla cumque dolorum ut accusamus facere consequatur. Magni, corporis!"</p><br>
+                    <div class="box--name">
+                      <div class="icon--directrice"></div>
+                      <p><span class="bold">Directrise Claire Mont,</span><br> Paris 12eme Lycee Louis</p>
+                    </div>
                 </div>
+              </div>
             </div>
-          </div>
-        </div>
-        
-        <div class="mySlides fade fade--2">
-          <div class="wrap--slider">
-            <img src="https://previews.123rf.com/images/ismagilov/ismagilov1608/ismagilov160801298/61793325-laboratoire-d-informatique-commerciale-%C3%A0-l-universit%C3%A9-tableau-%C3%A0-craie-ordinateurs-sur-des-bureaux-af.jpg">
-            <div class="text new__textbox">
-                <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, mollitia facere neque quae saepe accusantium! Molestiae nihil, rerum beatae obcaecati magnam nulla cumque dolorum ut accusamus facere consequatur. Magni, corporis!"</p><br>
-                <div class="box--name">
-                  <div class="icon--directrice"></div>
-                  <p><span class="bold">Directrise Claire Mont,</span><br> Paris 12eme Lycee Louis</p>
+            
+            <div class="mySlides fade fade--2">
+              <div class="wrap--slider">
+                <figure>
+                  <img src="https://previews.123rf.com/images/ismagilov/ismagilov1608/ismagilov160801298/61793325-laboratoire-d-informatique-commerciale-%C3%A0-l-universit%C3%A9-tableau-%C3%A0-craie-ordinateurs-sur-des-bureaux-af.jpg">
+                </figure>
+                <div class="text new__textbox">
+                    <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, mollitia facere neque quae saepe accusantium! Molestiae nihil, rerum beatae obcaecati magnam nulla cumque dolorum ut accusamus facere consequatur. Magni, corporis!"</p><br>
+                    <div class="box--name">
+                      <div class="icon--directrice"></div>
+                      <p><span class="bold">Directrise Claire Mont,</span><br> Paris 12eme Lycee Louis</p>
+                    </div>
                 </div>
+              </div>
             </div>
-          </div>
-        </div>
-        
-        <div class="mySlides fade fade--3">
-          <div class="wrap--slider">
-            <img src="https://previews.123rf.com/images/ismagilov/ismagilov1608/ismagilov160800457/61196208-int%C3%A9rieur-de-la-classe-de-l-%C3%A9cole-blackboard-et-affiches-sur-le-mur-des-chaises-en-plastique-d-un-.jpg">
-            <div class="text new__textbox">
-                <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, mollitia facere neque quae saepe accusantium! Molestiae nihil, rerum beatae obcaecati magnam nulla cumque dolorum ut accusamus facere consequatur. Magni, corporis!"</p><br>
-                <div class="box--name">
-                  <div class="icon--directrice"></div>
-                  <p><span class="bold">Directrise Claire Mont,</span><br> Paris 12eme Lycee Louis</p>
+            
+            <div class="mySlides fade fade--3">
+              <div class="wrap--slider">
+                <figure>
+                  <img src="https://previews.123rf.com/images/ismagilov/ismagilov1608/ismagilov160800457/61196208-int%C3%A9rieur-de-la-classe-de-l-%C3%A9cole-blackboard-et-affiches-sur-le-mur-des-chaises-en-plastique-d-un-.jpg">
+                </figure>
+                <div class="text new__textbox">
+                    <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, mollitia facere neque quae saepe accusantium! Molestiae nihil, rerum beatae obcaecati magnam nulla cumque dolorum ut accusamus facere consequatur. Magni, corporis!"</p><br>
+                    <div class="box--name">
+                      <div class="icon--directrice"></div>
+                      <p><span class="bold">Directrise Claire Mont,</span><br> Paris 12eme Lycee Louis</p>
+                    </div>
                 </div>
+              </div>
             </div>
-          </div>
-        </div>
-        
-        </div>
-        <br>
-        
-        <div class="box--dot">
-          <span class="dot"></span> 
-          <span class="dot"></span> 
-          <span class="dot"></span> 
-        </div>
-      <!-- <div class="new__textbox">
-        <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, mollitia facere neque quae saepe accusantium! Molestiae nihil, rerum beatae obcaecati magnam nulla cumque dolorum ut accusamus facere consequatur. Magni, corporis!"</p><br>
-        <div class="box--name">
-          <div class="icon--directrice"></div>
-          <p><span class="bold">Directrise Claire Mont,</span><br> Paris 12eme Lycee Louis</p>
-        </div>
-      </div> -->
-    </section>
+            
+            </div>
+            <br>
+            
+            <div class="box--dot">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div>
+          <!-- <div class="new__textbox">
+            <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, mollitia facere neque quae saepe accusantium! Molestiae nihil, rerum beatae obcaecati magnam nulla cumque dolorum ut accusamus facere consequatur. Magni, corporis!"</p><br>
+            <div class="box--name">
+              <div class="icon--directrice"></div>
+              <p><span class="bold">Directrise Claire Mont,</span><br> Paris 12eme Lycee Louis</p>
+            </div>
+          </div> -->
+        </section>
+    </div>
+
+    
 
 
 
