@@ -14,7 +14,9 @@
     <header>
       <h1><a href="index.html">Classroom3D</a></h1>
     </header>
+    <p class="teaser">Classroom3D est un service permettant d’aménager votre salle de classe avec des interieur en super qualite à l’aide d’un configurateur.</p>
     <div class="intro">
+
       <img src="img/clock.svg" class="intro__clock">
       <div class="intro__tablau">
         <div class="tableau__text tableau__text--1">
@@ -23,22 +25,35 @@
           <button class="intro__button">Cree un classroom</button>
         </div>
 
+        <div class="barProgression">
+          <div class="barProgression--active"></div>
+          <div class="barProgression__point barProgression__point--1"></div>
+          <div class="barProgression__point barProgression__point--2"></div>
+          <div class="barProgression__point barProgression__point--3"></div>
+          <div class="barProgression__point barProgression__point--4"></div>
+          <div class="barProgression__point barProgression__point--5"></div>
+          <div class="barProgression__point barProgression__point--6"></div>
+        </div>
+
         <div class="tableau__text tableau__commande--1">
           <span class="tableau__text__titre">Start your Project</span><br>
           <form action="">
-            <input type="text" class="input--1"></input>
-            <lable class="imput__description">Name of the School:</lable>
-            <br>
-            <input type="text"></input>
-            <lable class="imput__description">Name of the Class:</lable>
+            <div class="box">
+              <input type="text"></input>
+              <lable class="imput__description">Name of the School:</lable>
+            </div>
+            <div class="box">
+              <input type="text input--2"></input>
+              <lable class="imput__description">Name of the Class:</lable>
+            </div>
           </form>
           <button class="button--valide button__commande--1">Valide</button>
         </div>
 
         <div class="tableau__text tableau__commande--2">
           <span class="tableau__text__titre">Update le plan du class</span><br>
-          <span class="">ou cree ton map</span>
-          <button class="button--valide button__commande--2">Valide</button>
+          <span class="link--text">ou cree ton map</span>
+          <button class="button--valide button__commande--2">Select fichier</button>
         </div>
 
         <div class="tableau__text tableau__commande--3">
@@ -53,13 +68,19 @@
         </div>
 
         <div class="tableau__text tableau__commande--5">
-          <span class="tableau__text__titre">Check le vue de chaque enfant</span><br>
+          <span class="tableau__text__titre">Vue d'eleves</span><br>
           <span class="">Selecte le demi age du enfant pour le test de vue</span>
+          <form action="">
+            <div class="box box--mt">
+              <input type="text"></input>
+              <lable class="imput__description">Age moyenne du class:</lable>
+            </div>
+          </form>
           <button class="button--valide button__commande--5">Start</button>
         </div>
 
         <div class="tableau__text tableau__commande--5-1">
-          <span class="tableau__text__titre">Check le vue des table (1/32)</span>
+          <span class="tableau__text__titre">Vue d'eleves (1/32)</span>
           <img src="https://www.meinunterricht.de/wp-content/uploads/2016/08/media/jpg/meinunterricht_rituale_schule_ruherituale.jpg" class="checkview">
           <div class="buttonBox">
             <button class="button--alert button__commande--5-1--go">Mauvais</button>
@@ -69,7 +90,7 @@
         </div>
 
         <div class="tableau__text tableau__commande--5-2">
-          <span class="tableau__text__titre">Check le vue des table (2/32)</span>
+          <span class="tableau__text__titre">Vue d'eleves (2/32)</span>
           <img src="https://partipopulaire.be/wp-content/uploads/2017/09/Fotolia_68213814_Subscription_Monthly_M.jpg" class="checkview">
           <div class="buttonBox">
             <button class="button--alert button__commande--5-2--go">Mauvais</button>
@@ -87,12 +108,149 @@
           </div>
         </div>
 
+        <div class="tableau__text tableau__commande--7">
+          <span class="tableau__text__titre">Livraison et Installation</span><br>
+          <form action="">
+            <div class="box">
+                <input type="text"></input>
+                <lable class="imput__description">Jour du Livraison:</lable>
+              </div>
+              <div class="box">
+                <input type="text input--2"></input>
+                <lable class="imput__description">Time du Livraison:</lable>
+              </div>
+          </form>
+          <button class="button--valide button__commande--7">Valide</button>
+        </div>
+
+        <div class="tableau__text tableau__commande--8">
+          <span class="tableau__text__titre">Commande</span><br>
+          <table>
+            <tr>
+              <th>Möbel</th>
+              <th>Number</th> 
+              <th>Prix</th>
+            </tr>
+            <tr>
+              <td>Table</td>
+              <td>32</td> 
+              <td>2000€</td>
+            </tr>
+            <tr>
+              <td>Chaise</td>
+              <td>32</td> 
+              <td>2000€</td>
+            </tr>
+            <tr>
+              <td>Etagere</td>
+              <td>3</td> 
+              <td>300€</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td> 
+              <td>2600€</td>
+            </tr>
+          </table>
+          <button class="button--valide button__commande--8">Payer</button>
+        </div>
+
+        <div class="tableau__text tableau__commande--9">
+          <span class="tableau__text__titre">Merci pour votre commande</span><br>
+          <span class="">On se voir le 3. June 2019 a 17:00h</span>
+        </div>
+
       </div>
       <img src="img/teacher.svg" class="intro__teacher">
       <img src="img/rang.svg" class="intro__rang intro__rang--left">
       <img src="img/rang.svg" class="intro__rang intro__rang--right">
     </div>
     <p><i class="arrow down"></i></p>
+
+    <div class="test"></div>
+
+    <section class="avantages">
+      <h2>Super Headline pour ici</h2>
+      <div class="boxs--avantages">
+        <div class="box--avantage">
+          <img src="img/cube.svg" alt="">
+          <p>aménager votre salles de classe en 3D</p>
+        </div>
+        <div class="box--avantage">
+            <img src="img/visibility.svg" alt="">
+          <p>rendu concrète de l’epace </p>
+        </div>
+        <div class="box--avantage">
+          <img src="img/measuring-tape.svg" alt="">
+          <p>Ne laisser plus de doute sur les dimension</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="new">
+      <div class="slideshow-container">
+        <div class="mySlides fade fade--1">
+          <div class="wrap--slider">
+            <img src="https://previews.123rf.com/images/ismagilov/ismagilov1608/ismagilov160800094/60811708-entre-la-salle-de-classe-du-coll%C3%A8ge-avec-des-meubles-en-bois-big-fen%C3%AAtre-retour-%C3%A0-l-%C3%A9cole-rendu-3d-maquet.jpg">
+            <div class="text new__textbox">
+                <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, mollitia facere neque quae saepe accusantium! Molestiae nihil, rerum beatae obcaecati magnam nulla cumque dolorum ut accusamus facere consequatur. Magni, corporis!"</p><br>
+                <div class="box--name">
+                  <div class="icon--directrice"></div>
+                  <p><span class="bold">Directrise Claire Mont,</span><br> Paris 12eme Lycee Louis</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="mySlides fade fade--2">
+          <div class="wrap--slider">
+            <img src="https://previews.123rf.com/images/ismagilov/ismagilov1608/ismagilov160801298/61793325-laboratoire-d-informatique-commerciale-%C3%A0-l-universit%C3%A9-tableau-%C3%A0-craie-ordinateurs-sur-des-bureaux-af.jpg">
+            <div class="text new__textbox">
+                <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, mollitia facere neque quae saepe accusantium! Molestiae nihil, rerum beatae obcaecati magnam nulla cumque dolorum ut accusamus facere consequatur. Magni, corporis!"</p><br>
+                <div class="box--name">
+                  <div class="icon--directrice"></div>
+                  <p><span class="bold">Directrise Claire Mont,</span><br> Paris 12eme Lycee Louis</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="mySlides fade fade--3">
+          <div class="wrap--slider">
+            <img src="https://previews.123rf.com/images/ismagilov/ismagilov1608/ismagilov160800457/61196208-int%C3%A9rieur-de-la-classe-de-l-%C3%A9cole-blackboard-et-affiches-sur-le-mur-des-chaises-en-plastique-d-un-.jpg">
+            <div class="text new__textbox">
+                <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, mollitia facere neque quae saepe accusantium! Molestiae nihil, rerum beatae obcaecati magnam nulla cumque dolorum ut accusamus facere consequatur. Magni, corporis!"</p><br>
+                <div class="box--name">
+                  <div class="icon--directrice"></div>
+                  <p><span class="bold">Directrise Claire Mont,</span><br> Paris 12eme Lycee Louis</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        
+        </div>
+        <br>
+        
+        <div class="box--dot">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+      <!-- <div class="new__textbox">
+        <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, mollitia facere neque quae saepe accusantium! Molestiae nihil, rerum beatae obcaecati magnam nulla cumque dolorum ut accusamus facere consequatur. Magni, corporis!"</p><br>
+        <div class="box--name">
+          <div class="icon--directrice"></div>
+          <p><span class="bold">Directrise Claire Mont,</span><br> Paris 12eme Lycee Louis</p>
+        </div>
+      </div> -->
+    </section>
+
+
+
+    
+    
+
+    
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
   </body>
