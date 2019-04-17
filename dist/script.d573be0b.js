@@ -124,6 +124,13 @@ window.addEventListener('load', function () {
 
             if (document.documentElement.scrollTop > window.innerHeight * 0.9) {
               document.querySelector('.bg').classList.add('moveUp');
+
+              if (document.documentElement.scrollTop > window.innerHeight * 2.2) {
+                console.log("yes");
+                document.querySelector('.moeble').classList.add('moveUp');
+              } else {
+                document.querySelector('.moeble').classList.remove('moveUp');
+              }
             } else {
               document.querySelector('.bg').classList.remove('moveUp');
             }
@@ -319,7 +326,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52262" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60637" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

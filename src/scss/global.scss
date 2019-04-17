@@ -8,12 +8,18 @@ body {
 }
 
 body{
+  &.produit,&.comptbody{
+    min-height:100vh;
+    height: auto;
+    overflow: hidden;
+    background-color: #aeabc8;
+  }
   &.statusCommande{
     position: fixed;
     height:100vh;
     overflow: hidden;
   }
-  max-height:470vh;
+  height:505vh;
   overflow: hidden;
   position: relative;
 }

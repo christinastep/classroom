@@ -16,6 +16,13 @@ window.addEventListener('load', function() {
             document.querySelector('.avantages').style.top = "-20vw";
             if (document.documentElement.scrollTop > window.innerHeight*0.9 ) {
               document.querySelector('.bg').classList.add('moveUp');
+              if (document.documentElement.scrollTop > window.innerHeight*2.2 ) {
+                console.log("yes")
+                document.querySelector('.moeble').classList.add('moveUp');
+              }
+              else{
+                document.querySelector('.moeble').classList.remove('moveUp');
+              }
             }
             else{
               document.querySelector('.bg').classList.remove('moveUp');

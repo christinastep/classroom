@@ -1,12 +1,14 @@
 header{
   width:100vw;
-  padding:15px;
+  padding:10px;
   background-color: #fff;
   position: fixed;
   z-index: 30;
   padding-left:40px;
   top:0;
   transition: all .3s ease-in;
+  display: flex;
+  justify-content: space-between;
 }
 
 h1{
@@ -15,5 +17,18 @@ h1{
   a{
     text-decoration: none;
     color: black;
+  }
+}
+
+.compt{
+  margin-right: 20px;
+  border:solid 3px black;
+  border-radius: 50%;
+  width: 35px;
+  height:35px;
+  text-align: center;
+  padding:2px;
+  svg{
+    stroke: 2px;
   }
 }
