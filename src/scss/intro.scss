@@ -438,7 +438,7 @@ h2{
   transition:all 1s ease-in-out;
   top:0vw;
   left:15vw;
-  height:127vw;
+  height:135vw;//127
   border-radius:40px;
   background:#efefef;
   background-image:
@@ -447,7 +447,7 @@ h2{
   background-size:20px 20px;
   z-index: 19;
   &.moveUp{
-    top:-30vw;
+    top:-35vw;
   }
 }
 
@@ -602,7 +602,7 @@ h2{
     }
   }
   &.moveUp{
-    top:-82vw;
+    top:-100vw;
   }
 
   button{

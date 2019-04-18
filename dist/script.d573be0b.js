@@ -228,6 +228,19 @@ window.addEventListener('load', function () {
       document.querySelector(".compt__content--commandes").classList.add("active");
     });
   } else {
+    document.querySelector('.end__buttonsuper').addEventListener("click", function () {
+      console.log("click end");
+      document.querySelector('.intro__tablau').classList.add('commande');
+      document.querySelector('body').classList.remove('hp');
+      document.querySelector('body').classList.add('statusCommande');
+      document.querySelector('body').classList.add('step1');
+      document.querySelector('.barProgression__point--1').style.backgroundColor = "#48437D";
+      document.querySelector('.barProgression--active').style.width = "0%";
+      introFadeOut();
+      document.querySelector('.tableau__text--1').style.opacity = "0";
+      document.querySelector('.intro__teacher').style.left = "-20vw";
+      document.querySelector('.down').style.opacity = "0";
+    });
     document.querySelector('.intro__button').addEventListener("click", function () {
       document.querySelector('.intro__tablau').classList.add('commande');
       document.querySelector('body').classList.remove('hp');
@@ -367,7 +380,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53349" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53939" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

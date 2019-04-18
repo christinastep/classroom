@@ -121,7 +121,21 @@ window.addEventListener('load', function() {
 
 
   }else{
-    
+
+    document.querySelector('.end__buttonsuper').addEventListener("click", function(){
+      console.log("click end");
+      document.querySelector('.intro__tablau').classList.add('commande');
+      document.querySelector('body').classList.remove('hp');
+      document.querySelector('body').classList.add('statusCommande');
+      document.querySelector('body').classList.add('step1');
+      document.querySelector('.barProgression__point--1').style.backgroundColor = "#48437D";
+      document.querySelector('.barProgression--active').style.width = "0%";
+      introFadeOut();
+      document.querySelector('.tableau__text--1').style.opacity = "0";
+      document.querySelector('.intro__teacher').style.left = "-20vw";
+      document.querySelector('.down').style.opacity = "0";
+    });
+
   document.querySelector('.intro__button').addEventListener("click", function(){
     document.querySelector('.intro__tablau').classList.add('commande');
     document.querySelector('body').classList.remove('hp');
@@ -131,6 +145,8 @@ window.addEventListener('load', function() {
     document.querySelector('.barProgression--active').style.width = "0%";
     introFadeOut();
   });
+    
+  
 
   document.querySelector(".button__commande--1").addEventListener("click",function(){
     console.log("click2")
