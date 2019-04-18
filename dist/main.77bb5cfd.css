@@ -656,16 +656,25 @@ h2:after {
   margin-bottom: 50px;
   background-color: #ffff;
   border-radius: 20px;
-  padding: 20px;
+  padding: 30px;
   position: relative;
   transition: 0.2s all ease-in-out;
+  display: flex;
+  justify-content: center;
 }
 .box--moeble .box:hover {
   transform: scale(1.05);
 }
 .box--moeble .box img {
-  width: 100%;
+  width: 80%;
   margin-bottom: 10px;
+  align-self: center;
+}
+.box--moeble .box img.schrank {
+  width: 60%;
+}
+.box--moeble .box img.regal {
+  width: 100%;
 }
 .box--moeble .box button {
   position: absolute;
@@ -726,11 +735,25 @@ body.statusCommande .end {
   align-items: flex-start;
   justify-content: space-between;
 }
+.produit section .produitflex {
+  position: relative;
+}
 .produit section figure {
+  min-height: 70vh;
   width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .produit section figure img {
-  width: 100%;
+  width: 60%;
+}
+.produit section figure img.regal {
+  width: 80%;
+}
+.produit section figure img.schrank {
+  width: 40%;
 }
 .produit section nav {
   margin-bottom: 30px;

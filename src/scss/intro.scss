@@ -201,6 +201,10 @@ button{
     background-color: rgb(235, 230, 230);
     padding:15px;
   }
+  // &.checkview--generatormap{
+  //   width:80%;
+  //   height:auto;
+  // }
   
 }
 
@@ -625,16 +629,25 @@ h2{
     margin-bottom: 50px;
     background-color: #ffff;
     border-radius:20px;
-    padding:20px;
+    padding:30px;
     position: relative;
     transition: .2s all ease-in-out;
+    display: flex;
+    justify-content: center;
     &:hover{
       transform: scale(1.05);
     }
     
     img{
-      width:100%;
+      width:80%;
       margin-bottom: 10px;
+      align-self: center;
+      &.schrank{
+        width:60%;
+      }
+      &.regal{
+        width:100%;
+      }
     }
     button{
       position: absolute;
@@ -710,11 +723,24 @@ body{
     align-items: flex-start;
     justify-content: space-between;
     }
+    .produitflex{
+      position: relative;
+    }
     figure{
+      min-height: 70vh;
       width:40%;
-      //background-color: red;
+      height:100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       img{
-        width: 100%;
+        width: 60%;
+        &.regal{
+          width: 80%;
+        }
+        &.schrank{
+          width:40%;
+        }
       }
     }
     nav{
@@ -937,7 +963,7 @@ body{
   display: none;
   &.active{
     display: block;
-    
+
   }
 }
 
