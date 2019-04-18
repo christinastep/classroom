@@ -884,6 +884,53 @@ body.statusCommande .end {
   background-color: #48437D;
 }
 
+.commandes__line {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 3px solid grey;
+}
+.commandes__line .command__salle {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+.commandes__line .command__salle span {
+  text-decoration: none;
+  color: grey;
+  padding-left: 20px;
+  position: relative;
+}
+.commandes__line .command__salle span:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  margin-left: 20px;
+  position: absolute;
+  right: -30px;
+  top: 7px;
+}
+.commandes__line .command__salle span.status--attends:after {
+  background-color: grey;
+}
+.commandes__line .command__salle span.status--production:after {
+  background-color: orange;
+}
+.commandes__line .command__salle span.status--livre:after {
+  background-color: green;
+}
+.commandes__line span {
+  text-decoration: underline;
+}
+
+.compt__content {
+  display: none;
+}
+.compt__content.active {
+  display: block;
+}
+
 header {
   width: 100vw;
   padding: 10px;

@@ -887,6 +887,60 @@ body{
   }  
 } 
 
+.commandes__line{
+  display: flex;
+  justify-content: space-between;
+  padding:10px;
+  border-bottom: 3px solid grey;
+  .command__salle{
+    font-weight: bold;
+    font-size: 1.3em;
+    span{
+      text-decoration: none;
+      color:grey;
+      padding-left:20px;
+      position: relative;
+      &:after{
+        width:15px;
+        height:15px;
+        border-radius:50%;
+        content: "";
+        display: block;
+        margin-left: 20px;
+        position: absolute;
+        right:-30px;
+        top:7px;
+      }
+      &.status--attends{
+        &:after{
+          background-color: grey;
+        }  
+      }
+      &.status--production{
+        &:after{
+          background-color: orange;
+        }
+      }
+      &.status--livre{
+        &:after{
+          background-color: green;
+        }
+      }
+    }
+  }
+  span{
+    text-decoration: underline;
+  }
+}
+
+.compt__content{
+  display: none;
+  &.active{
+    display: block;
+    
+  }
+}
+
 
 
 

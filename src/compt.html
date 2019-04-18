@@ -27,19 +27,35 @@
     
     <section class="flex compt__main">
       <div class="compt__navigation">
-        <p>Mes Salles</p>
-        <p>Mes Commandes</p>
-        <p>Mes Messages</p>
-        <p>Mes Informations</p>
+        <p class="compt__link compt__link--salle">Mes Salles</p>
+        <p class="compt__link compt__link--commandes">Mes Commandes</p>
+        <p class="compt__link">Mes Messages</p>
+        <p class="compt__link">Mes Informations</p>
       </div>
       <div class="compt__Info">
-        <div class="compt__content compt__content--salle">
+        <div class="compt__content compt__content--salle active">
           <h3>Mes Salles</h3>
           <div class="flex salleWrap">
             <div class="compt__salle"><img src="img/room--2.jpg"><p>S.01.13</p></div>
             <div class="compt__salle"><img src="img/room--1.jpg"><p>S.01.13</p></div>
             <div class="compt__salle"><img src="img/room--1.jpg"><p>S.01.13</p></div>
             <div class="compt__salle"><img src="img/room--2.jpg"><p>S.01.13</p></div>
+          </div>
+        </div>
+
+        <div class="compt__content compt__content--commandes">
+          <h3>Mes Commandes</h3>
+          <div class="commandesBox">
+            <div class="flex commandes__line"><p class="command__salle">S.02.01<span class="status--production">Status: Production</span></p><span>Modifizer</span></div>
+
+            <div class="flex commandes__line"><p class="command__salle">S.03.01<span class="status--attends">Status: Attends date Livraison</span></p><span>Modifizer</span></div>
+            <div class="flex commandes__line"><p class="command__salle">S.03.02<span class="status--attends">Status: Attends date Livraison</span></p><span>Modifizer</span></div>
+            <div class="flex commandes__line"><p class="command__salle">S.03.03<span class="status--attends">Status: Attends date Livraison</span></p><span>Modifizer</span></div>
+            <div class="flex commandes__line"><p class="command__salle">S.03.04<span class="status--attends">Status: Attends date Livraison</span></p><span>Modifizer</span></div>
+
+            <div class="flex commandes__line"><p class="command__salle">S.01.15<span class="status--livre">Status: Livré</span></p></div>
+            <div class="flex commandes__line"><p class="command__salle">S.01.14<span class="status--livre">Status: Livré</span></p></div>
+            <div class="flex commandes__line"><p class="command__salle">S.01.13<span class="status--livre">Status: Livré</span></p></div>
           </div>
         </div>
       </div>
