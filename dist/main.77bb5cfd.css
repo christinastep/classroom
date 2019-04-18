@@ -62,7 +62,7 @@ body {
 }
 
 body {
-  height: 505vh;
+  height: 445vh;
   overflow: hidden;
   position: relative;
 }
@@ -488,7 +488,7 @@ h2:after {
   transition: all 1s ease-in-out;
   top: 0vw;
   left: 15vw;
-  height: 135vw;
+  height: 120vw;
   border-radius: 40px;
   background: #efefef;
   background-image: linear-gradient(90deg, grey 1px, transparent 0), linear-gradient(grey 1px, transparent 0);
@@ -627,13 +627,13 @@ h2:after {
   z-index: 27;
   padding-top: 5vw;
   padding-bottom: 3vw;
-  transition: 0.8s all ease-in-out;
+  transition: 1s all ease-in-out;
 }
 .moeble h2:after {
   background-color: #fff;
 }
 .moeble.moveUp {
-  top: -100vw;
+  top: -90vw;
 }
 .moeble button {
   position: absolute;

@@ -36,7 +36,7 @@ window.addEventListener('load', function() {
             document.querySelector('.avantages').style.top = "-20vw";
             if (document.documentElement.scrollTop > window.innerHeight*0.9 ) {
               document.querySelector('.bg').classList.add('moveUp');
-              if (document.documentElement.scrollTop > window.innerHeight*2.2 ) {
+              if (document.documentElement.scrollTop > window.innerHeight*1.9 ) {
                 console.log("yes")
                 document.querySelector('.moeble').classList.add('moveUp');
               }

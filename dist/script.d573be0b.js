@@ -153,7 +153,7 @@ window.addEventListener('load', function () {
             if (document.documentElement.scrollTop > window.innerHeight * 0.9) {
               document.querySelector('.bg').classList.add('moveUp');
 
-              if (document.documentElement.scrollTop > window.innerHeight * 2.2) {
+              if (document.documentElement.scrollTop > window.innerHeight * 1.9) {
                 console.log("yes");
                 document.querySelector('.moeble').classList.add('moveUp');
               } else {
@@ -380,7 +380,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53939" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57092" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
